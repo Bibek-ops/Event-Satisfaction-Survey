@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Our Events Better</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Event Satisfaction Survey</h1>
+    <p id="description">This survey is designed to gather your valuable feedback on the recent event.</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">What is your name?
+                <input type="text" id="name" placeholder="bibek shrestha" required>
+            </label>
+            <label for="email" id="email-label">What is your email?
+                <input type="email" id="email" placeholder="123@gmail.com" required>
+            </label>
+            <label for="number" id="number-label">What is your age?
+                <input type="number" id="number" min="13" max="120" placeholder="20">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown">How would you rate your overall experience at the event?</label>
+            <select id="dropdown">
+                <option value="satisfied">Satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="dissatisfied"> Dissatisfied</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Wil you attend a similar event in the future?</legend>
+            <label for="radio1">
+              <input type="radio" name="radio" id="radio1" value="yes" class="inline">Yes
+            </label>
+            <label for="radio2">
+              <input type="radio" name="radio" id="radio2" value="no" class="inline">No
+            </label>
+            <label for="radio3">
+              <input type="radio" name="radio" id="radio3" value="maybe" class="inline">Maybe
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+                <legend>Which of the following topics would you be interested in attending for future events? </legend>
+                <label for="checkbox1">
+                  <input type="checkbox" id="checkbox1" value="workshops" name="check[]" class="inline">Workshops
+                </label>
+                <label for="checkbox2">
+                  <input type="checkbox" id="checkbox2" value="seminars" name="check[]" class="inline">Seminars
+                </label>
+                <label for="checkbox3">
+                  <input type="checkbox" id="checkbox3" value="networking event" name="check[]" class="inline">Networking Event
+                </label>
+                <label for="checkbox4">
+                  <input type="checkbox" id="checkbox4" value="conferences" name="check[]" class="inline">Conferences
+                </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Please provide any additional comments or feedback regarding the event.</legend>
+            <label for="addons"></label>
+              <textarea rows="3" cols="30" id="addons" name="feedback" placeholder="Enter your comments here..."></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="aggrement">
+                <input type="checkbox" id="aggrement" class="inline" required name="terms-and-conditions"> I accept the <a href="terms and condition.png"> terms and conditions</a>
+            </label>
+        </fieldset>
+        <fieldset>
+            <button class="button" type="submit" id="submit" name="submit">Submit</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
